@@ -9,9 +9,11 @@ Experimental code to demonstrate squatting attack of Enhance Calling Definition 
 | Resource Consumer App | The app that requests to consume some resources. |      App C       |
 |       Evil App        |   The app that was developed by the attacker.    |      App E       |
 
-# Keystore file
+# Signing key files
 - keystore4source.jks: The keystore that uses to sign App P, App R and App C.
+- certificate4source.pem: The digital certificate was obtained from keystore4source.jks file which sha256 fingerprint is 657D6F7C6295D453F027A8CC4CE528F411D95276CCA140F540C53F396DF1CEFF.
 - keystore4evil.jks: The keystore that uses to sign App E.
+- certificate4evil.pem: The digital certificate was obtained from keystore4evil.jks which sha256 fingerprint is B0A8D53CD8D134C226F41C89BBBD275E11CD104147C839427E52C89C248F64.
 
 # Squatting attack reproduction process
 - App P, App R and App C are signed with keystore4source.jks. App E is signed with keystore4evil.jks.
