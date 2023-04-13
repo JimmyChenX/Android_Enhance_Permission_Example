@@ -12,10 +12,12 @@ Experimental code to demonstrate squatting attack of Enhance Calling Definition 
 # Signing key files
 - keystore4source.jks: The keystore that uses to sign App P, App R and App C.
 - keystore4source.der: The signing certificate of App P, App R and App C.
+
   sha256(keystore4source.der) = 657d6f7c6295d453f027a8cc4ce528f411d95276cca140f540c53f396df1ceff
 
 - keystore4evil.jks: The keystore that uses to sign App E.
 - keystore4evil.der: The signing certificate of App E.
+
   sha256(keystore4evil.der) =  41b0a8d53cd8d134c226f41c89bbbd275e11cd104147c839427e52c89c248f64
 
 # Squatting attack reproduction process
